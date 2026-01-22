@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MEDINET - FIND A DOCTOR</title>
+    <title>MEDINET - ABOUT</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+447400717427</a>
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+2348038784548</a>
                         <span class="text-body">|</span>
                         <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@medinethospitals.com</a>
                     </div>
@@ -72,7 +72,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>MEDINET</h1>
+                    <img src="img/MEDINET LOGO.jpg" alt="Logo" style="width: 150px; height: 50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -108,7 +108,7 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/SURGEON-TEAM.png" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -116,7 +116,7 @@
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
                         <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p>At Medinet Hospitals, we are committed to providing comprehensive medical care that meets international standards while remaining accessible and patient‑focused. Our team of experienced healthcare professionals works tirelessly to ensure every patient receives personalized and quality treatment.</p>
                     <div class="row g-3 pt-3">
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
@@ -150,32 +150,47 @@
     <!-- About End -->
 
 
-    <!-- Search Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
-                <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
-                <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
-            </div>
-            <div class="mx-auto" style="width: 100%; max-width: 600px;">
+  <!-- Search Start -->
+<div class="container-fluid bg-primary my-5 py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
+            <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
+            <h5 class="text-white fw-normal">
+                Search for qualified healthcare professionals by department or keyword.
+            </h5>
+        </div>
+
+        <div class="mx-auto" style="width: 100%; max-width: 600px;">
+            <!-- FUNCTIONAL SEARCH FORM -->
+            <form action="search.html" method="GET">
                 <div class="input-group">
-                    <select class="form-select border-primary w-25" style="height: 60px;">
-                        <option selected>Department</option>
-                        <option value="1">Department 1</option>
-                        <option value="2">Department 2</option>
-                        <option value="3">Department 3</option>
+                    <select name="department" class="form-select border-primary w-25" style="height: 60px;">
+                        <option value="">Department</option>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Surgery">Surgery</option>
+                        <option value="Maternal & Child Care">Maternal & Child Care</option>
+                        <option value="Emergency Care">Emergency Care</option>
                     </select>
-                    <input type="text" class="form-control border-primary w-50" placeholder="Keyword">
-                    <button class="btn btn-dark border-0 w-25">Search</button>
+
+                    <input type="text"
+                           name="keyword"
+                           class="form-control border-primary w-50"
+                           placeholder="Doctor name or specialty">
+
+                    <button class="btn btn-dark border-0 w-25" type="submit">
+                        Search
+                    </button>
                 </div>
-            </div>
+            </form>
+            <!-- END FORM -->
         </div>
     </div>
-    <!-- Search End -->
+</div>
+<!-- Search End -->
 
 
-    <!-- Team Start -->
+     <!-- Team Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
@@ -186,56 +201,58 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/CHRISEMEKA.png" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Dr. Chris Emeka U.</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Head, General Medicine</h6>
+                                <p class="m-0">Dr. Chris Emeka U. is an experienced general physician with a strong background in diagnosing and managing a wide range of medical conditions. He is committed to preventive healthcare, accurate diagnosis, and patient-centered treatment, ensuring quality care for individuals and families.</p>
                             </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/OKOYEONYEKA.png" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Dr. Okoye Onyekachi</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Head, Surgery</h6>
+                                <p class="m-0">Dr. Okoye Onyekachi is a skilled surgeon with expertise in both minor and major surgical procedures. He is known for his precision, adherence to safety standards, and comprehensive pre- and post-operative patient care, delivering optimal surgical outcomes.</p>
                             </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                            <img class="img-fluid h-100" src="img/drwilliams.png" style="object-fit: cover;">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Doctor Name</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                <h3>Dr. Roy Williams</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Head, Emergency & Critical Care</h6>
+                                <p class="m-0">Dr. Roy Williams specializes in maternal and child healthcare, providing compassionate care for women and children. He is dedicated to safe maternity services, child health development, and family-focused medical support.</p>
                             </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-100">
+                            <img class="img-fluid h-100" src="img/DRLILIAN.png" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Dr. Lilian Adebayo</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Head, Maternal & Child Care</h6>
+                                <p class="m-0">Dr. Lilian Adebayo leads the Emergency and Critical Care department with professionalism and urgency. She has extensive experience in handling medical emergencies, trauma cases, and acute conditions, ensuring rapid response and lifesaving interventions.</p>
                             </div>
                         </div>
                     </div>
@@ -245,27 +262,26 @@
     </div>
     <!-- Team End -->
 
-
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Location, City, Country</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-4">We are here  to support your health needs. Reach out to us for appointments, enquiries or emergency care</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>51, Nvuigwe Road, Woji, Port Harcourt. Rivers State</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@in@medinethospitals.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+2348038784548</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="team.html"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <!-- <a class="text-light mb-2" href=""><i class="fa fa-angle-right me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -275,24 +291,33 @@
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a> -->
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Newsletter</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
+                    <form id="newsletterForm" action="https://formspree.io/f/xaqypndy" method="POST">
+    <div class="input-group">
+        <input
+            type="email"
+            name="email"
+            class="form-control p-3 border-0"
+            placeholder="Your Email Address"
+            required
+        >
+        <button class="btn btn-primary" type="submit">
+            Sign Up
+        </button>
+    </div>
+</form>
+
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://wa.me/+2348038784548"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -302,10 +327,10 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">MEDINETHOSPITALS</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-primary" href="https://freewebsitecode.com">Free Website Code</a></p>
+                    <p class="mb-0">WEBSITE DEVELOPED by <a class="text-primary" href="https://millitechhub.com">Milli Tech Hub Web Solutions Limited</a></p>
                 </div>
             </div>
         </div>

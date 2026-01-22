@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MEDINET - FIND A DOCTOR</title>
+    <title>MEDINET - BOOK AN APPOINTMENT</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+447400717427</a>
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+2348038784548</a>
                         <span class="text-body">|</span>
                         <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@medinethospitals.com</a>
                     </div>
@@ -72,7 +72,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>MEDINET</h1>
+                    <img src="img/MEDINET LOGO.jpg" alt="Logo" style="width: 150px; height: 50px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -110,58 +110,163 @@
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="mb-4">
                         <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Appointment</h5>
-                        <h1 class="display-4">Make An Appointment For Your Family</h1>
+                        <h1 class="display-4">Book An Appointment Today </h1>
                     </div>
-                    <p class="mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
+                    <p class="mb-5">Schedule your visit with our experienced medical professionals at a time that works best for you. At Medinethospitals, we make booking appointments simple and convenient, ensuring you receive timely, compassionate, and high-quality healthcare tailored to your needs.</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 me-3" href="search.html">Find A Doctor</a>
                     <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="">Read More</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Book An Appointment</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-white border-0" style="height: 55px;">
-                                        <option selected>Choose Department</option>
-                                        <option value="1">Department 1</option>
-                                        <option value="2">Department 2</option>
-                                        <option value="3">Department 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-white border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-white border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-white border-0 datetimepicker-input"
-                                            placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-white border-0 datetimepicker-input"
-                                            placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
-                                </div>
-                            </div>
-                        </form>
+                        
+                    <!-- FORMSPREE FORM (STYLED INLINE) -->
+<form id="appointmentForm"
+      action="https://formspree.io/f/xaqypndy"
+      method="POST"
+      style="
+        background:#ffffff;
+        padding:30px;
+        border-radius:16px;
+        box-shadow:0 20px 40px rgba(0,0,0,0.08);
+      ">
+
+    <div class="row g-3">
+
+        <!-- Department -->
+        <div class="col-12 col-sm-6">
+            <select name="department" required
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+                <option selected disabled>Choose Department</option>
+                <option value="General Medicine">General Medicine</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Maternal & Child Care">Maternal & Child Care</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <!-- Doctor -->
+        <div class="col-12 col-sm-6">
+            <select name="doctor" required
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+                <option selected disabled>Select Doctor</option>
+                <option value="Doctor Chris">Doctor Chris</option>
+                <option value="Doctor Williams">Doctor Williams</option>
+                <option value="Doctor Roy">Doctor Roy</option>
+                <option value="Doctor Lilian">Doctor Lilian</option>
+                <option value="Doctor Okoye">Doctor Okoye</option>
+            </select>
+        </div>
+
+        <!-- Name -->
+        <div class="col-12 col-sm-6">
+            <input type="text" name="patient_name" required
+                placeholder="Your Name"
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+        </div>
+
+        <!-- Email -->
+        <div class="col-12 col-sm-6">
+            <input type="text" name="text" required
+                placeholder="Phone Number"
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+        </div>
+
+        <!-- Date -->
+        <div class="col-12 col-sm-6">
+            <input type="date" name="appointment_date" required
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+        </div>
+
+        <!-- Time -->
+        <div class="col-12 col-sm-6">
+            <input type="time" name="appointment_time" required
+                style="
+                    width:100%;
+                    height:55px;
+                    border:none;
+                    border-radius:12px;
+                    padding:0 16px;
+                    background:#f1f5f9;
+                    font-size:15px;
+                    outline:none;
+                ">
+        </div>
+
+        <!-- Hidden context -->
+        <input type="hidden" name="form_type" value="Hospital Appointment Booking">
+
+        <!-- Submit Button -->
+        <div class="col-12">
+            <button type="submit"
+                style="
+                    width:100%;
+                    padding:16px;
+                    border:none;
+                    border-radius:50px;
+                    background:#13C5DD;
+                    color:#ffffff;
+                    font-size:16px;
+                    font-weight:600;
+                    cursor:pointer;
+                    transition:all 0.3s ease;
+                "
+                onmouseover="this.style.background='#0fb0cc'; this.style.transform='translateY(-2px)'"
+                onmouseout="this.style.background='#13C5DD'; this.style.transform='translateY(0)'">
+                Book Appointment
+            </button>
+        </div>
+
+    </div>
+</form>
+<!-- END FORM -->
+
+
                     </div>
                 </div>
             </div>
@@ -176,20 +281,20 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
-                    <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor</p>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Location, City, Country</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-4">We are here  to support your health needs. Reach out to us for appointments, enquiries or emergency care</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>51, Nvuigwe Road, Woji, Port Harcourt. Rivers State</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@in@medinethospitals.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+2348038784548</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                        <a class="text-light mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="service.html"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                        <a class="text-light mb-2" href="team.html"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                        <!-- <a class="text-light mb-2" href=""><i class="fa fa-angle-right me-2"></i>Latest Blog</a> -->
+                        <a class="text-light" href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -199,24 +304,33 @@
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
                         <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
+                        <!-- <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a> -->
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Newsletter</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
-                        </div>
-                    </form>
+                    <form id="newsletterForm" action="https://formspree.io/f/xaqypndy" method="POST">
+    <div class="input-group">
+        <input
+            type="email"
+            name="email"
+            class="form-control p-3 border-0"
+            placeholder="Your Email Address"
+            required
+        >
+        <button class="btn btn-primary" type="submit">
+            Sign Up
+        </button>
+    </div>
+</form>
+
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://facebook.com/freewebsitecode/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://freewebsitecode.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://youtube.com/freewebsitecode/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://wa.me/+2348038784548"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://wa.me/+2348038784548"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -226,16 +340,15 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">MEDINETHOSPITALS</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-primary" href="https://freewebsitecode.com">Free Website Code</a></p>
+                    <p class="mb-0">Designed by <a class="text-primary" href="https://millitechhub.com">Milli Tech Hub Web Solutions Limited</a></p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

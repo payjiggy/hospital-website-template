@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #13C5DD;
+    --primary: #0f055d;
     --secondary: #354F8E;
     --light: #EFF5F9;
     --dark: #1D2A4D;
@@ -97,9 +97,10 @@
 }
 
 .hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
+    background: url(../img/mainblessinganddoctor.png) top right no-repeat;
     background-size: cover;
 }
+
 
 .service-item {
     position: relative;
