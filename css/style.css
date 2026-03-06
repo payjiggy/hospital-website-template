@@ -44,6 +44,7 @@
     text-align: center;
 }
 
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -87,6 +88,12 @@
         width: 100%;
         left: 0;
     }
+}
+
+.btn:hover{
+    background:#020066 !important;
+    color:#ffffff !important;
+    border-color:#ffffff !important;
 }
 
 @media (max-width: 991.98px) {
